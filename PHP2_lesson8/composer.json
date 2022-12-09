@@ -1,0 +1,36 @@
+{
+    "name": "geekbrains/leveltwo",
+    "autoload": {
+        "psr-4": {
+            "GeekBrains\\LevelTwo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GeekBrains\\PHPUnit\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tex3700",
+            "email": "tex3700@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/polyfill-uuid": "^1.26",
+        "fakerphp/faker": "^1.20",
+        "ext-pdo": "*",
+        "ext-mbstring": "*",
+        "psr/container": "^2.0",
+        "monolog/monolog": "^2.8",
+        "vlucas/phpdotenv": "^5.4",
+        "symfony/console": "^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "roave/security-advisories": "dev-latest"
+    },
+    "scripts": {
+        "test": "phpunit tests --testdox --colors"
+    }
+}
